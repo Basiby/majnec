@@ -3,6 +3,3 @@
 - Po schválení dostaneš IP a whitelist.
 - Server: „vanilla feeling“ + QoL príkazy (/home, /warp, /spawn).
 - FAQ zahŕňa otázku k warez: povolené, ale preferujeme originálky.
-
-## Nasadenie
-Stačí otvoriť `index.html` alebo nahrať na ľubovoľný static hosting.
