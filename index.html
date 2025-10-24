@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="sk" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MAJNEC — Súkromný Minecraft server</title>
+  <meta name="description" content="MAJNEC je súkromný survival server s 'vanilla feeling' a pár QoL príkazmi ako /home, /warp, /spawn. Whitelist vybavíš cez ticket na našom Discorde." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand reveal"><img src="assets/cube.svg" alt="" class="logo"> <span>MAJNEC</span></a>
+      <nav class="nav">
+        <a href="#how" class="nav-link">Ako sa pripojiť</a>
+        <a href="#rules" class="nav-link">Pravidlá</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+      <button id="themeToggle" class="btn ghost" aria-label="Prepnúť režim">
+        <span class="icon-sun" aria-hidden="true">☀️</span>
+        <span class="icon-moon" aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container reveal">
+      <p class="badge">Survival + pár QoL príkazov</p>
+      <h1>Vitaj na <span class="highlight">MAJNEC</span></h1>
+      <p class="lead">
+        Stabilný survival, férová komunita a pár užitočných dodatkov
+        (<code>/home</code>, <code>/warp</code>, <code>/spawn</code>) pre pohodlnejší gameplay.
+      </p>
+      <div class="cta-row">
+        <a id="formLink" class="btn primary" href="https://discord.gg/tYxpcnngrb" target="_blank" rel="noopener">Otvoriť Discord &nbsp;↗</a>
+        <a class="btn ghost" href="#how">Ako sa pripojiť</a>
+      </div>
+
+      <div class="server-card glass reveal">
+        <div class="server-row">
+          <span class="k">Adresa</span><span class="v" id="serverAddress">XXX</span>
+        </div>
+        <div class="server-row">
+          <span class="k">Verzia</span><span class="v">1.21.x (Java)</span>
+        </div>
+        <div class="server-row">
+          <span class="k">Typ</span><span class="v">Vanilla feeling + QoL (/home, /warp, /spawn)</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="container steps reveal">
+      <h2>Ako sa pripojiť</h2>
+      <ol class="step-list">
+        <li>
+          <h3>Vytvor ticket na Discorde</h3>
+          <p>Klikni na <a id="formLinkInline" href="https://discord.gg/tYxpcnngrb" target="_blank" rel="noopener">náš Discord</a> a založ ticket <strong>#whitelist</strong> (príp. „Support“). Tam vyplníš krátky formulár.</p>
+        </li>
+        <li>
+          <h3>Schválenie</h3>
+          <p>Po skontrolovaní formulára ti pošleme IP a pridáme ťa na whitelist. Adresa nie je verejná.</p>
+        </li>
+        <li>
+          <h3>Pridaj server v Minecraft-e</h3>
+          <p>V <em>Multiplayer</em> zvoľ <strong>Add Server</strong>. Adresu dostaneš po schválení ticketa.</p>
+        </li>
+        <li>
+          <h3>Hraj férovo</h3>
+          <p>Rešpektuj ostatných a pravidlá. Žiadne cheaty, žiadny griefing. Chill vibe only.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="rules" class="container rules reveal">
+      <h2>Pravidlá servera</h2>
+      <ul class="rule-list">
+        <li>ŽIADNE cheaty, hacknuté klienty, X-Ray, macro/auto-clicker a dupovanie.</li>
+        <li>Žiadny griefing, kradnutie alebo úmyselné ničenie cudzej práce.</li>
+        <li>Žiadny doxing, vyhrážky, harasment, rasizmus, NSFW obsah alebo reklama/spam.</li>
+        <li>PvP iba so súhlasom oboch strán (okrem dohodnutých eventov).</li>
+        <li>Bugy a exploity nahlasuj; ich zneužívanie je zákazané.</li>
+        <li>Admin má posledné slovo; porušenia môžu viesť k permanentnému banu.</li>
+      </ul>
+      <div class="note">Dodatky sú len QoL: príkazy <code>/home</code>, <code>/warp</code>, <code>/spawn</code>. Gameplay zostáva rozumne vanilla.</div>
+    </section>
+
+    <section id="faq" class="container faq reveal">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Je to čisté vanilla?</summary>
+        <p>Nie úplne. Je to „vanilla feeling“ s pár QoL príkazmi (<code>/home</code>, <code>/warp</code>, <code>/spawn</code>) — nič pay2win, nič čo by lámalo balans.</p>
+      </details>
+      <details>
+        <summary>Je server len na pozvánku?</summary>
+        <p>Áno, vstup prebieha cez ticket na Discorde a následné schválenie.</p>
+      </details>
+      <details>
+        <summary>Je to aj pre warez?</summary>
+        <p>Áno, server je prístupný aj pre <strong>warez</strong> hráčov, ale <strong>preferujeme originálne účty</strong>.</p>
+      </details>
+      <details>
+        <summary>Podporujete Bedrock?</summary>
+        <p>Primárne Java edícia. Ak sa community dohodne, môžeme pridať Bedrock bridge v budúcnosti.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner reveal">
+      <div>
+        <strong>MAJNEC</strong><br>
+        <small>© <span id="year"></span> Súkromný Minecraft server</small>
+      </div>
+      <div class="foot-links">
+        <a href="#rules">Pravidlá</a>
+        <a id="contactLink" href="https://discord.gg/tYxpcnngrb" target="_blank" rel="noopener">Kontakt (Discord)</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
