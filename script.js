@@ -4,7 +4,7 @@
 
   // ---- CONFIG ----
   const CONFIG = {
-    DISCORD_INVITE: "https://discord.gg/tYxpcnngrb",
+    DISCORD_INVITE: "https://discord.com/invite/JPYnXjZPwX",
     SERVER_ADDRESS: "XXX"
   };
 
